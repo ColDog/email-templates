@@ -14,9 +14,9 @@ I then tried Ink, which is like a front end CSS framework but for emails. This i
 You can see an example page with all of the built out elements so far. Check out the page at: 
     https://rawgit.com/coldog/email-templates/master/builder/output.html
 
-This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients.
+This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients. 
 
-Overall, tables have much more support than any other HTML element in email clients it seems. So it is better if everything is a table, that's the approach taken by the Litmus templates. Everything from buttons to just standard markup is a table. It is absolutely awful to write but it does work. I believe they are the people behind the 'bulletproof buttons' which are buttons that work on every client. Zurb's buttons simply just don't seem to work when I tested them.
+Part of the difficulty in the markup of these templates, is the css is already inlined while Zurb requires a program to inline the css before sending. As a result, the markup could look a little prettier with some basic refactoring. Most of the difficulty with the markup, however, is that it uses tables for almost everything, even a button becomes a table. The upside is it just works on everything I've tested it on, whereas Zurb's templates have not lived up to that.
 
 I wrote a small little python program that can basically mash up different templates and elements based on the Litmus templates. For example, you can write something like this:
 
@@ -49,7 +49,7 @@ builder.write({
         },
 ```
 
-Which will create an html email with two hero images and some text.
+Which will create an html email with two hero images and some text. I think it takes the markup and makes it much more maintainable while creating a platform that we could extend in the future to be the emailing service for all of the company emails.
 
 ## Conclusion
 
