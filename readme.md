@@ -2,6 +2,11 @@
 
 This repository contains a sample of my work done on creating email templates. There are two relevant packages: The Zurb folder has the work that I have done with the Zurb foundation tempates, while the builder folder has the work I have done with another templating system from Litmus.
 
+##### Quickstart Summary
+Go to: http://rawgit.com/coldog/email-templates/master/builder/output.html
+
+I liked the Zurb templates as they were easy to design and the markup was nice, but they seemed to fall flat in testing. It even says on their homepage that they don't support Outlook. One solution are templates from Litmus, which are hard to use but are consistent across platforms.
+
 ## Zurb Templates
 I took some screenshots of the work I was doing to make it easier to take a quick glance, they are in zurb/screenshots.
 
@@ -12,7 +17,7 @@ I then tried Ink, which is like a front end CSS framework but for emails. This i
 
 ## Slate from Litmus
 You can see an example page with all of the built out elements so far. Check out the page at: 
-    https://rawgit.com/coldog/email-templates/master/builder/output.html
+    http://rawgit.com/coldog/email-templates/master/builder/output.html
 
 This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients. 
 
