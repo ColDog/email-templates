@@ -1,0 +1,33 @@
+<!-- NOTIFICATIONS -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#D8F1FF" align="center" style="padding: 40px 15px 70px 15px;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
+                <tr>
+                    <td>
+
+                        {% for note in notifications %}
+                            <!-- NOTIFICATION -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td valign="top" width="10%" style="padding: 10px;"><a href="{{ note['link'] }}" target="_blank"><img src="{{ note['image'] }}" alt="{{ note['alt'] }}" width="80" height="80" border="0" style="display: block; font-family: Arial; color: #266e9c; font-size: 14px;"></a></td>
+                                    <td width="80%">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="left" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy">{{ note['title'] }}</td>
+                                            </tr>
+                                            <tr>
+                                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">{{ note['content'] }}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        {% endfor %}
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
