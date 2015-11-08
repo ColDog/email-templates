@@ -10,6 +10,8 @@ I then tried Ink, which is like a front end CSS framework but for emails. This i
 ## Slate from Litmus
 This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients.
 
+Overall, tables have much more support than any other HTML element in email clients it seems. So it is better if everything is a table, that's the approach taken by the Litmus templates. Everything from buttons to just standard markup is a table. It is absolutely awful to write but it does work. I believe they are the people behind the 'bulletproof buttons' which are buttons that work on every client. Zurb's buttons simply just don't seem to work when I tested them.
+
 I wrote a small little python program that can basically mash up different templates and elements based on the Litmus templates. For example, you can write something like this:
 
 ```python
@@ -44,4 +46,9 @@ builder.write({
 Which will create an html email with two hero images and some text.
 
 ## Conclusion
-Overall, I would recommend going in the direction of the Litmus templates, I think they are just simply much more robust. The downside is that they are hard to work with because of the markup structure. But when you refactor them into separate templates that can be easily combined
+
+### Overview
+
+Overall, I would recommend going in the direction of the Litmus templates, I think they are just simply much more robust. The downside is that they are hard to work with because of the markup structure. But when you refactor them into separate templates that can be easily combined I think they are much easier to deal with.
+
+Despite this, I would love to work with Zurb's templates and would try and implement some of the features of the Litmus templates like bulletproof buttons to make the Zurb templates more universal.

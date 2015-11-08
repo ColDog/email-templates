@@ -36,7 +36,7 @@ builder.write({
         {
             'template': 'dark-hero.html',
             'options': {
-                'image': 'images/hero.png',
+                'image': 'http://s30.postimg.org/4h73cnl7l/hero.png',
                 'title': 'Freedom to Create',
                 'content': """
                     Dear customer,
