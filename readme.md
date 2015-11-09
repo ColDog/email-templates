@@ -3,7 +3,7 @@
 This repository contains a sample of my work done on creating email templates. There are two relevant packages: The Zurb folder has the work that I have done with the Zurb foundation tempates, while the builder folder has the work I have done with another templating system from Litmus.
 
 ##### Quickstart Summary
-The following links are some of the templates I've built. I focused more on building components that I've seen in various places and in my research for this project. As a result, the emails are not direct copies of certain emails, but the components are inspired by common designs. The goal was to make reusable components that I can build upon.
+The following links are some of the templates I've built. I focused more on building components that I've seen in various places and in my research for this project. As a result, the emails are not direct copies of certain emails, but the components are inspired by common designs. The goal was to make reusable components that I can build upon, while also showing I can implement common design patterns and ideas which I think is what you were looking for.
 
 1. [Announcement](http://rawgit.com/coldog/email-templates/master/litmus-based/announcement.html)
 2. [List of Articles](http://rawgit.com/coldog/email-templates/master/litmus-based/articles.html)
