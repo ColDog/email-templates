@@ -1,0 +1,48 @@
+<!-- START HERO -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" align="center" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" class="heading1 padding-copy">{{ title }}</td>
+                                        </tr>
+
+                                        {% for line in content.split('\n') %}
+                                        <tr>
+                                            <td align="left" class="paragraph padding-copy">{{ line }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <!-- BULLETPROOF BUTTON -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                        <tr>
+                                            <td align="center" class="padding-copy">
+                                                <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                    <tr>
+                                                        <td align="center"><a href="#" target="_blank" class="button mobile-button">{{ button }} &rarr;</a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
