@@ -36,13 +36,13 @@ from builder import Builder
 builder = Builder('output-file.html')
 
 # this will write the html to 'output-file.html'. 
-# We can use `build` to create a string of html.
+# We can use `builder.build()` to create a string of html.
 builder.write([
     {
-        'template': 'header.html',
-        'options': {
+        'template': 'header.html',  # this is the template that will be selected
+        'options': {                # it will be rendered with these options
             'intro': 'This is the introduction which will appear first thing after the subject line',
-            'logo_image': 'https://cms-media.skiomusic.com/wp-content/uploads/sites/4/2015/10/29033923/skio-logo-white.png',
+            'logo_image': 'img.png',
             'logo_alt': 'Skio Music',
             'tagline': 'Discover Music, Build Contracts and Find Collaborators'
         }
