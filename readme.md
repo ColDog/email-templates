@@ -21,48 +21,46 @@ I took some screenshots of the work I was doing to make it easier to take a quic
 
 I found the Zurb templates really easy to understand and fun to work with, but not as universal as far as their rendering across different clients. They admit that they cannot render on Outlook at all in the notes below the templates, but I also found out that they do not render well on Gmail as well.
 
-I then tried Ink, which is like a front end CSS framework but for emails. This is like the original templates but built out more. This became less intuitive for building because the markup was very strange especially for just trying to center text. Overall, Outlook was better on the tests, but Gmail still wasn't working for me.
+I then tried Ink, which is like a front end CSS framework but for emails. This is like the original templates but built out more. This became less intuitive for building because the markup was very strange especially for just trying to center text. Outlook was better on the tests, but Gmail still wasn't working for me.
 
 #### Litmus
-This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients. 
+This is a collection of templates from Litmus, the company that owns the market as far as email testing goes, so I think they should be able to write some pretty good templates. The markup for these was absolutely awful, but it is way more consistent across different email clients. Most of the difficulty with the markup is that it uses tables for almost everything, even a button becomes a table. The upside is it just works on everything I've tested it on, whereas Zurb's templates have not lived up to that.
 
-Part of the difficulty in the markup of these templates, is the css is already inlined while Zurb requires a program to inline the css before sending. As a result, the markup could look a little prettier with some basic refactoring. Most of the difficulty with the markup, however, is that it uses tables for almost everything, even a button becomes a table. The upside is it just works on everything I've tested it on, whereas Zurb's templates have not lived up to that.
-
-I also ended up building a build script in Python to inline the CSS, while I was at it, I converted my components I was building into template files that can be mashed up and iterated over. The litmus-based/builder folder contains the Builder class. You will notice each template in litmus-based has a corresponding script with the dictionary that built it. I mainly did this to make it easier to keep track of the components and add dummy markup but I think it could be very useful down the road for keeping things maintainable.
+I also ended up building a build script in Python to inline the CSS, and while I was at it, I converted my components I was building into template files that can be mashed up together based on a dictionary. The litmus-based/builder folder contains the Builder class. You will notice each template in the `litmus-based` folder has a corresponding script with the dictionary that built it. I mainly did this to make it easier to keep track of the components and add dummy markup but I think it could be very useful down the road for keeping things maintainable.
 
 It means you can build an email with the following script:
 
-    ```
-    from builder import Builder
-    
-    builder = Builder('output-file.html')
-    
-    # this will write the html to 'output-file.html'. 
-    # We can use `build` to create a string of html.
-    builder.write([
-        {
-            'template': 'header.html',
-            'options': {
-                'intro': 'This is the introduction which will appear first thing after the subject line',
-                'logo_image': 'https://cms-media.skiomusic.com/wp-content/uploads/sites/4/2015/10/29033923/skio-logo-white.png',
-                'logo_alt': 'Skio Music',
-                'tagline': 'Discover Music, Build Contracts and Find Collaborators'
-            }
-        },
-        {
-            'template': 'panel.html',
-            'options': {
-                'title': 'Thank You For Signing Up!',
-                'content': """
-                Hello Person,
-                This is an announcement made inside a panel.
-                Here is where you would tell people about what you can do for them.
-                """,
-                'button': 'Check it out',
-            }
-        },
-    ])
-    ```
+```python
+from builder import Builder
+
+builder = Builder('output-file.html')
+
+# this will write the html to 'output-file.html'. 
+# We can use `build` to create a string of html.
+builder.write([
+    {
+        'template': 'header.html',
+        'options': {
+            'intro': 'This is the introduction which will appear first thing after the subject line',
+            'logo_image': 'https://cms-media.skiomusic.com/wp-content/uploads/sites/4/2015/10/29033923/skio-logo-white.png',
+            'logo_alt': 'Skio Music',
+            'tagline': 'Discover Music, Build Contracts and Find Collaborators'
+        }
+    },
+    {
+        'template': 'panel.html',
+        'options': {
+            'title': 'Thank You For Signing Up!',
+            'content': """
+            Hello Person,
+            This is an announcement made inside a panel.
+            Here is where you would tell people about what you can do for them.
+            """,
+            'button': 'Check it out',
+        }
+    },
+])
+```
 
 ### Conclusion
 
