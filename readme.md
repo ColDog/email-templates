@@ -5,14 +5,16 @@ This repository contains a sample of my work done on creating email templates. T
 ##### Quickstart Summary
 The following links are some of the templates I've built. I focused more on building components that I've seen in various places and in my research for this project. As a result, the emails are not direct copies of certain emails, but the components are inspired by common designs. The goal was to make reusable components that I can build upon.
 
-1. Announcement: http://rawgit.com/coldog/email-templates/master/litmus-based/announcement.html
-2. List of Articles: http://rawgit.com/coldog/email-templates/master/litmus-based/articles.html
-3. Dark Full Hero: http://rawgit.com/coldog/email-templates/master/litmus-based/dark-hero.html
-4. Newsletter: http://rawgit.com/coldog/email-templates/master/litmus-based/newsletter.html
-5. Basic Intro: http://rawgit.com/coldog/email-templates/master/litmus-based/panel.html
-5. Sales Receipt: http://rawgit.com/coldog/email-templates/master/litmus-based/receipt.html
+1. [Announcement](http://rawgit.com/coldog/email-templates/master/litmus-based/announcement.html)
+2. [List of Articles](http://rawgit.com/coldog/email-templates/master/litmus-based/articles.html)
+3. [Dark Full Hero](http://rawgit.com/coldog/email-templates/master/litmus-based/dark-hero.html)
+4. [Newsletter](http://rawgit.com/coldog/email-templates/master/litmus-based/newsletter.html)
+5. [Basic Intro](http://rawgit.com/coldog/email-templates/master/litmus-based/panel.html)
+5. [Sales Receipt](http://rawgit.com/coldog/email-templates/master/litmus-based/receipt.html)
 
 I liked the Zurb templates as they were easy to design and the markup was nice, but they seemed to fall flat in testing. It even says on their homepage that they don't support Outlook. So I tried the 'framework' from Zurb called Ink, but I found that it didn't do so well on Gmail although it improved on Outlook. I ended up doing most of the work above with Litmus templates https://litmus.com/resources/free-responsive-email-templates. See below for my reasoning.
+
+I tested the emails using the free tier of Litmus and additionally by sending them to myself. They should be all relatively solid across clients.
 
 ### Overview
 
