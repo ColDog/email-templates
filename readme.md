@@ -11,6 +11,7 @@ The following links are some of the templates I've built. I focused more on buil
 4. [Newsletter](http://rawgit.com/coldog/email-templates/master/litmus-based/newsletter.html)
 5. [Basic Intro](http://rawgit.com/coldog/email-templates/master/litmus-based/panel.html)
 5. [Sales Receipt](http://rawgit.com/coldog/email-templates/master/litmus-based/receipt.html)
+5. [Checkered Articles](http://rawgit.com/coldog/email-templates/master/litmus-based/checkers.html)
 
 I liked the Zurb templates as they were easy to design and the markup was nice, but they seemed to fall flat in testing. It even says on their homepage that they don't support Outlook. So I tried the 'framework' from Zurb called Ink, but I found that it didn't do so well on Gmail although it improved on Outlook. I ended up doing most of the work above with Litmus templates https://litmus.com/resources/free-responsive-email-templates. See below for my reasoning.
 
