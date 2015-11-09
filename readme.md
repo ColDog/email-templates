@@ -15,7 +15,7 @@ The following links are some of the templates I've built. I focused more on buil
 
 I liked the Zurb templates as they were easy to design and the markup was nice, but they seemed to fall flat in testing. It even says on their homepage that they don't support Outlook. So I tried the 'framework' from Zurb called Ink, but I found that it didn't do so well on Gmail although it improved on Outlook. I ended up doing most of the work above with Litmus templates https://litmus.com/resources/free-responsive-email-templates. See below for my reasoning.
 
-I tested the emails using the free tier of Litmus and additionally by sending them to myself. They should be all relatively solid across clients.
+I tested the emails using the free tier of Litmus and additionally by sending them to myself. They should be relatively solid across clients.
 
 ### Overview
 
