@@ -1,6 +1,6 @@
 from builder import Builder
 
-builder = Builder('panel.html')
+builder = Builder('announcement.html')
 
 builder.write([
     {
@@ -13,25 +13,21 @@ builder.write([
         }
     },
     {
-        'template': 'panel.html',
+        'template': 'announcement.html',
         'options': {
-            'title': 'Thank You For Signing Up!',
-            'content': """
-            Hello Person,
-            This is an announcement made inside a panel.
-            Here is where you would tell people about what you can do for them.
-            """,
-            'button': 'Check it out',
+            'image': 'https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/341_wf/tool-balsamiq.png',
+            'title': 'The best product ever made'
         }
     },
     {
-        'template': 'panel.html',
+        'template': 'letter.html',
         'options': {
-            'title': 'Need Help?',
             'content': """
-            Our help section can help you with anything and everything.
-            """,
-            'button': 'Get Help',
+                    Dear customer,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, leo a ullamcorper feugiat, ante purus sodales justo, a faucibus libero lacus a est.
+                    Sed varius, leo a ullamcorper feugiat, ante purus sodales justo, a faucibus libero lacus a est. Aenean at mollis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, leo a ullamcorper feugiat, ante purus sodales justo, a faucibus libero lacus a est.
+                    Sincerely,<br>Colin Walker
+                """
         }
     },
     {

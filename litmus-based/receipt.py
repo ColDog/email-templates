@@ -1,6 +1,6 @@
 from builder import Builder
 
-builder = Builder('panel.html')
+builder = Builder('receipt.html')
 
 builder.write([
     {
@@ -13,25 +13,17 @@ builder.write([
         }
     },
     {
-        'template': 'panel.html',
+        'template': 'receipt.html',
         'options': {
-            'title': 'Thank You For Signing Up!',
-            'content': """
-            Hello Person,
-            This is an announcement made inside a panel.
-            Here is where you would tell people about what you can do for them.
-            """,
-            'button': 'Check it out',
-        }
-    },
-    {
-        'template': 'panel.html',
-        'options': {
-            'title': 'Need Help?',
-            'content': """
-            Our help section can help you with anything and everything.
-            """,
-            'button': 'Get Help',
+            'title': 'Thank You For Your Purchase',
+            'description': 'This is an official reciept from SKIO Music',
+            'total': '$ 1,000,000',
+            'order': [
+                {'name': 'Milk', 'price': '$ 11.00'},
+                {'name': 'Milk', 'price': '$ 11.00'},
+                {'name': 'Milk', 'price': '$ 11.00'},
+                {'name': 'Milk', 'price': '$ 11.00'},
+            ]
         }
     },
     {

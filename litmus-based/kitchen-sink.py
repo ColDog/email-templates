@@ -7,6 +7,27 @@ builder.write({
     'intro': 'This is the introduction which will appear first thing after the subject line',
     'elements': [
         {
+            'template': 'header.html',
+            'options': {
+                'intro': 'This is the introduction which will appear first thing after the subject line',
+                'logo_image': 'https://cms-media.skiomusic.com/wp-content/uploads/sites/4/2015/10/29033923/skio-logo-white.png',
+                'logo_alt': 'Skio Music',
+                'tagline': 'Discover Music, Build Contracts and Find Collaborators'
+            }
+        },
+        {
+            'template': 'panel.html',
+            'options': {
+                'title': 'This is a cool panel',
+                'content': """
+                Hello Everyone,
+
+                This is an announcement made inside a panel.
+                """,
+                'button': 'Check it out',
+            }
+        },
+        {
           'template': 'header.html',
              'options': {
                 'intro': 'This is the first line that will show up right after the subject.',

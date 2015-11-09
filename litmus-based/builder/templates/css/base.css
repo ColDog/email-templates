@@ -20,14 +20,22 @@
     font-size: 16px;
     line-height: 25px;
     font-family: Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: #555;
 }
 
 .heading1 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    color: #333333;
+    font-size: 35px;
+    font-weight: 600;
+    color: #666;
     padding-top: 30px;
+}
+
+.heading2 {
+    padding: 15px 0 0 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 20px;
 }
 
 .section-padding {
@@ -36,4 +44,29 @@
 
 .padding-copy {
     padding: 25px 0 0 0;
+}
+
+.panel {
+    padding: 20px;
+    border: thin solid #cccccc;
+}
+
+.image {
+    display: block;
+    color: #666666;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 13px;
+}
+
+.link {
+    padding: 5px 0 0 0;
+    font-family: Arial, sans-serif;
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #256F9C;
 }
