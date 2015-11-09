@@ -2,34 +2,40 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
         <td bgcolor="#E6E9ED" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding">
-            <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0 0 20px 0;" class="responsive-table">
+            <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0;" class="responsive-table">
                 <tr><td align="center" style="padding: 0 0 10px 0; font-size: 25px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">{{ title }}</td></tr>
 
                 <!-- ARTICLE -->
                 {% for article in articles %}
 
-                <tr style="border-bottom: thin solid #666666;">
-                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide"><a href="#" target="_blank"><img src="{{ article['image'] }}" alt="{{ article['alt'] }}" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
-                    <td style="padding: 40px 0 0 0;" class="no-padding">
-                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td style="border-bottom: thin solid; ">
+                        <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:0;" class="responsive-table">
                             <tr>
-                                <td align="left" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy">{{ article['title'] }}</td>
-                            </tr>
-                            <tr>
-                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">{{ article['content'] }}</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:0 0 45px 25px;" align="left" class="padding">
-                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                <td valign="top" style="padding: 20px;" class="mobile-hide"><a href="#" target="_blank"><img src="{{ article['image'] }}" alt="{{ article['alt'] }}" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;"></a></td>
+                                <td style="padding: 40px 0 0 0;" class="no-padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
                                         <tr>
-                                            <td align="center">
-                                                <!-- BULLETPROOF BUTTON -->
-                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                            <td align="left" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;" class="padding-copy">{{ article['title'] }}</td>
+                                        </tr>
+                                        <tr>
+                                             <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">{{ article['content'] }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 20px;" align="left" class="padding">
+                                                <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
                                                     <tr>
-                                                        <td align="center" style="padding: 0;" class="padding-copy">
-                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                        <td align="center">
+                                                            <!-- BULLETPROOF BUTTON -->
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
                                                                 <tr>
-                                                                    <td align="center"><a href="#" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #256F9C; border-top: 10px solid #256F9C; border-bottom: 10px solid #256F9C; border-left: 20px solid #256F9C; border-right: 20px solid #256F9C; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">{{ article['button'] }} &rarr;</a></td>
+                                                                    <td align="center" style="padding: 0;" class="padding-copy">
+                                                                        <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                            <tr>
+                                                                                <td align="center"><a href="#" target="_blank" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #256F9C; border-top: 10px solid #256F9C; border-bottom: 10px solid #256F9C; border-left: 20px solid #256F9C; border-right: 20px solid #256F9C; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">{{ article['button'] }} &rarr;</a></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                         </td>
